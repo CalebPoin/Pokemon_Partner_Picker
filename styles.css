@@ -1,0 +1,93 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html, body {
+ height: 100%
+}
+h1, h2, h3, h4, h5, h6, p {
+ margin-bottom: 16px
+}
+
+/*Nav Bar*/
+nav {
+  height: 50px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  width: 100%;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+footer {
+    background-color: black;
+    width: 100%;
+}
+footer p{
+    color: white;
+}
+
+/*Home Page*/
+.content {
+    padding-top: 75px;
+    margin: 0 auto;
+    background-color: teal;
+    height: 150%;
+    width: 90%;
+}
+h1{
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.homeImages {
+    margin: 0 auto;
+    background-color: blue;
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+.img1{
+    background-color: purple;
+    width: 220px;
+    height: 220px;
+    border-radius: 125px; 
+}
+.img2{
+    background-color: purple;
+    width: 220px;
+    height: 220px;
+    border-radius: 125px;   
+}
+.img3{
+    background-color: purple;
+    width: 220px;
+    height: 220px;
+    border-radius: 125px;   
+}.img4{
+    background-color: purple;
+    width: 220px;
+    height: 220px;
+    border-radius: 125px;   
+}
+.img5{
+    background-color: purple;
+    width: 220px;
+    height: 220px;
+    border-radius: 125px;   
+}
+
+.spacer{
+    margin: 0 auto;
+    width: 97%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
