@@ -91,6 +91,29 @@ footer p{
     color: rgb(129, 59, 182);
 }
 
+.content button a{
+    text-decoration: none;
+}
+
+.chart{
+    justify-self: center;
+    padding-top: 75px;
+    width: 75%;
+    height: 100%;
+}
+
+.chart img{
+    margin-top: -75px;
+    object-fit: contain;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.chart button{
+    margin-top: 15px;
+}
+
 @keyframes wiggle {
   0% {
     transform: translatey(-10px);
