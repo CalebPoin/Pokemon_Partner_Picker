@@ -7,26 +7,39 @@ html, body {
  height: 100%
 }
 h1, h2, h3, h4, h5, h6, p {
- margin-bottom: 16px
+ margin-bottom: 16px;
+
+ font-family: arial;
 }
+
 
 /*Nav Bar*/
 nav {
   height: 50px;
-  background-color: #000;
+  background-color: #8c7ce2;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   position: fixed;
   width: 100%;
+  font-family: arial;
 }
 nav a {
   text-decoration: none;
   color: #fff;
 }
+
+nav img{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
 footer {
-    background-color: black;
+    background-color: #8c7ce2;
     width: 100%;
+    height: 50px;
+    align-content: center;
+    justify-items: center;
 }
 footer p{
     color: white;
@@ -36,15 +49,17 @@ footer p{
 .content {
     padding-top: 75px;
     margin: 0 auto;
-    background-color: teal;
+    background: linear-gradient(to right, rgb(155, 138, 255), rgb(221, 143, 255));
+    background-color: rgb(76, 211, 211);
     height: 150%;
     width: 90%;
 }
-h1{
+.content h1{
     text-align: center;
     width: 40%;
     margin: 0 auto;
     margin-bottom: 20px;
+    color: white;
 }
 
 .homeImages {
@@ -93,24 +108,61 @@ h1{
     background-color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .about{
-    width: 500px;
-    height: 500px;
-    background-color: tomato;
+    padding-top: 75px;
+    width: 90%;
+    height: 100%;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr;
 }
 
+.aboutImageOne{
+    justify-content: center;
+}
 
-/* text text text */
+.aboutImageOne img{
+    overflow: hidden;
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.aboutImageTwo{
+    justify-content: center;
+}
+
+.aboutImageTwo img{
+    overflow: hidden;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.aboutTextOne{
+    font-family: arial;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+}
+
+.aboutTextTwo{
+    font-family: arial;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+}
+
+.aboutTextOne h1{
+   color:rgb(155, 138, 255)
+}
+
+.aboutTextTwo h1{
+    color:rgb(202, 138, 255)
+}
