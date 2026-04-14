@@ -167,3 +167,99 @@ footer p{
 .aboutTextTwo h1{
     color:rgb(202, 138, 255)
 }
+
+.contactBox{
+    background: linear-gradient(to right, rgb(155, 138, 255), rgb(221, 143, 255));
+    width: 75%;
+    height: 100%;
+    padding-top: 75px;
+    justify-self: center;
+    display: block;
+}
+
+.contactBox form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: arial;
+    color: white;
+    padding-top: 100px;
+}
+
+.contactBox form input{
+    width: 50%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    border: none;
+    padding-left: 10px;
+}
+
+.contactBox form label{
+    padding-bottom: 10px;
+}
+
+.contactBox form button{
+    margin-top: 60px;
+    width: 25%;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-family: arial;
+    font-size: 16px;
+    color: rgb(129, 59, 182);
+}
+
+.contactBox textarea{
+    width: 50%;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.sticker > div{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    animation: appear 2s;
+}
+
+.sticker > div img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding-left: 15px;
+}
+
+.sticker > div:hover{
+    transform: scale(1.1);
+}
+
+.stickerOne{
+    top: 10vh; left: 16vw;
+    transform: rotate(15deg);
+}
+
+.stickerTwo{
+    top: 35vh; left: 74vw;
+    transform: rotate(-15deg);
+}
+
+.stickerThree{
+    top: 70vh; left: 16vw;
+    transform: rotate(15deg);
+}
