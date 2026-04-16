@@ -23,6 +23,7 @@ nav {
   position: fixed;
   width: 100%;
   font-family: arial;
+  z-index: 2;
 }
 nav a {
   text-decoration: none;
