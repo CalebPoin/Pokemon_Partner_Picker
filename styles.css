@@ -239,6 +239,31 @@ footer p{
     height: 210%;
 }
 
+@media (max-width: 600px) {
+    .aboutBody{
+        height: 115%;
+    }
+}
+
+@media (max-width: 600px) {
+    .sticker{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .homeImages > div{
+        width: 100px;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero{
+        height: 30%;
+    }
+
 .contactBox{
     background: linear-gradient(to right, rgb(155, 138, 255), rgb(221, 143, 255));
     width: 100%;
