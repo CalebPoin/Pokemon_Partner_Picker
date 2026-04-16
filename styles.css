@@ -98,7 +98,7 @@ footer p{
 .chart{
     justify-self: center;
     padding-top: 100px;
-    padding-bottom: 25px;
+    padding-bottom: 105px;
     height: 100%;
 }
 
@@ -110,8 +110,21 @@ footer p{
     height: 100%;
 }
 
-.chart button{
-    margin-top: 15px;
+.chart a{
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 25%;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-family: arial;
+    font-size: 16px;
+    color: rgb(129, 59, 182);
 }
 
 @keyframes wiggle {
