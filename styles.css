@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 
+
 /*Nav Bar*/
 nav {
   height: 50px;
@@ -176,7 +177,8 @@ footer p{
 .about{
     margin: 0 auto;
     padding-top: 75px;
-    width: 90%;
+    margin-bottom: 30px;
+    width: auto;
     height: 110%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -211,16 +213,17 @@ footer p{
 }
 
 .aboutTextOne{
+    /*background-color: blue;*/
+    margin: 0 auto;
+    width: 300px;
     font-family: arial;
-    padding-left: 150px;
-    padding-right: 150px;
     text-align: center;
 }
 
 .aboutTextTwo{
+    margin: 0 auto;
+    width: 300px;
     font-family: arial;
-    padding-left: 150px;
-    padding-right: 150px;
     text-align: center;
 }
 
