@@ -179,19 +179,17 @@ footer p{
     padding-top: 75px;
     margin-bottom: 30px;
     width: auto;
-    height: 110%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.5fr 1fr;
+    height: 100%;
 }
 
 .aboutImageOne{
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .aboutImageOne img{
     overflow: hidden;
-    width: 60%;
+    width: 30%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -199,12 +197,14 @@ footer p{
 }
 
 .aboutImageTwo{
+    margin-top: 100px;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .aboutImageTwo img{
     overflow: hidden;
-    width: 60%;
+    width: 30%;
     height: auto;
     margin: 0 auto;
     display: block;
@@ -233,6 +233,10 @@ footer p{
 
 .aboutTextTwo h1{
     color:rgb(202, 138, 255)
+}
+
+.aboutBody{
+    height: 210%;
 }
 
 .contactBox{
