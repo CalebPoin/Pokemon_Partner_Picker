@@ -182,12 +182,12 @@ footer p{
     height: 100%;
 }
 
-.aboutImageOne{
+.aboutImage{
     justify-content: center;
     margin-bottom: 20px;
 }
 
-.aboutImageOne img{
+.aboutImage img{
     overflow: hidden;
     width: 30%;
     height: auto;
@@ -196,23 +196,7 @@ footer p{
     border: 2px solid black;
 }
 
-.aboutImageTwo{
-    margin-top: 100px;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.aboutImageTwo img{
-    overflow: hidden;
-    width: 30%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-    margin: 0 auto;
-    border: 2px solid black;
-}
-
-.aboutTextOne{
+.aboutText{
     /*background-color: blue;*/
     margin: 0 auto;
     width: 300px;
@@ -220,19 +204,9 @@ footer p{
     text-align: center;
 }
 
-.aboutTextTwo{
-    margin: 0 auto;
-    width: 300px;
-    font-family: arial;
-    text-align: center;
-}
 
-.aboutTextOne h1{
+.aboutText h1{
    color:rgb(155, 138, 255)
-}
-
-.aboutTextTwo h1{
-    color:rgb(202, 138, 255)
 }
 
 .aboutBody{
