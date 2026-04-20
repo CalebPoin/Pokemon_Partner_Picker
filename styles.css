@@ -349,3 +349,11 @@ footer p{
     top: 70vh; left: 12vw;
     transform: rotate(15deg);
 }
+
+.pokemonBox{
+    height: 200px;
+    width: 50%;
+    justify-self: center;
+    background-color: white;
+    border-radius: 50px;
+}
