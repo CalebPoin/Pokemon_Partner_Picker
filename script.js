@@ -1,6 +1,7 @@
 const API = "https://pokeapi.co/api/v2/pokemon/";
 const MAX_POKEMON_ID = 1010;
 
+const pokemonBox = document.getElementById("pokemonBox");
 const button = document.getElementById("generateButton");
 const resetButton = document.getElementById("resetButton");
 const placeholderImage = "images/pokemon_placeholder.png";
@@ -46,9 +47,14 @@ async function generateTeam() {
         img.src = imageUrl;
       }
       img.alt = pokemon.name || `pokemon ${id}`;
+      return pokemon.name;
     });
 
-    await Promise.all(promises);
+    const name = await Promise.all(promises);
+    pokemonBox.innerHTML = name
+      .map(name => `<p>${name}</p>`)
+      .join("");
+
   } catch (error) {
     console.error(error);
   } finally {
@@ -65,4 +71,3 @@ function resetTeam() {
 
 button.addEventListener("click", generateTeam);
 resetButton.addEventListener("click", resetTeam);
-
