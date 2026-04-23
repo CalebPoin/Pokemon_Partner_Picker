@@ -1,3 +1,21 @@
+// Step 1 — Paste your config object (from Firebase Console)
+const firebaseConfig = {
+  apiKey: "AIzaSyASORaCFX8hB5TDfzd9c58LP7XMcVNAHMk",
+  authDomain: "pokemon-4477e.firebaseapp.com",
+  projectId: "pokemon-4477e",
+  storageBucket: "pokemon-4477e.firebasestorage.app",
+  messagingSenderId: "1000863468457",
+  appId: "1:1000863468457:web:44e824241614483a7d52b8"
+};
+
+// Step 2 — Initialise Firebase with your config
+firebase.initializeApp(firebaseConfig);
+
+// Step 3 — Get a reference to the Realtime Database
+const db = firebase.database();
+
+// All your other code goes below this point
+
 const API = "https://pokeapi.co/api/v2/pokemon/";
 const MAX_POKEMON_ID = 1010;
 
