@@ -1,18 +1,36 @@
-// Step 1 — Paste your config object (from Firebase Console)
+import { initializeApp } from "firebase/app";
+import { getDatabase } from "firebase/database";
+
+// TODO: Add SDKs for Firebase products that you want to use
+
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+
+// Your web app's Firebase configuration
+
 const firebaseConfig = {
-  apiKey: "AIzaSyASORaCFX8hB5TDfzd9c58LP7XMcVNAHMk",
-  authDomain: "pokemon-4477e.firebaseapp.com",
-  projectId: "pokemon-4477e",
-  storageBucket: "pokemon-4477e.firebasestorage.app",
-  messagingSenderId: "1000863468457",
-  appId: "1:1000863468457:web:44e824241614483a7d52b8"
+
+  apiKey: "AIzaSyAi0NciW46RWGGmfnuOu9ze03gk2VD2fvQ",
+
+  authDomain: "pokemon-team-generator-54dc3.firebaseapp.com",
+
+  databaseURL: "https://pokemon-team-generator-54dc3-default-rtdb.firebaseio.com",
+
+  projectId: "pokemon-team-generator-54dc3",
+
+  storageBucket: "pokemon-team-generator-54dc3.firebasestorage.app",
+
+  messagingSenderId: "955331064380",
+
+  appId: "1:955331064380:web:709d8cbcfbb8739286c939"
+
 };
 
-// Step 2 — Initialise Firebase with your config
-firebase.initializeApp(firebaseConfig);
 
-// Step 3 — Get a reference to the Realtime Database
-const db = firebase.database();
+// Initialize Firebase
+
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
 
 // All your other code goes below this point
 
