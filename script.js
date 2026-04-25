@@ -1,42 +1,22 @@
-import { initializeApp } from "firebase/app";
-import { getDatabase } from "firebase/database";
-
-// TODO: Add SDKs for Firebase products that you want to use
-
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-
-// Your web app's Firebase configuration
-
 const firebaseConfig = {
-
   apiKey: "AIzaSyAi0NciW46RWGGmfnuOu9ze03gk2VD2fvQ",
-
   authDomain: "pokemon-team-generator-54dc3.firebaseapp.com",
-
   databaseURL: "https://pokemon-team-generator-54dc3-default-rtdb.firebaseio.com",
-
   projectId: "pokemon-team-generator-54dc3",
-
   storageBucket: "pokemon-team-generator-54dc3.firebasestorage.app",
-
   messagingSenderId: "955331064380",
-
   appId: "1:955331064380:web:709d8cbcfbb8739286c939"
-
 };
 
-
-// Initialize Firebase
-
-const app = initializeApp(firebaseConfig);
-const database = getDatabase(app);
-
-// All your other code goes below this point
+firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
 
 const API = "https://pokeapi.co/api/v2/pokemon/";
 const MAX_POKEMON_ID = 1010;
 
+const teamName = document.getElementById("teamName");
+const deleteName = document.getElementById("deleteName");
+const submitName = document.getElementById("submitName");
 const pokemonBox = document.getElementById("pokemonBox");
 const button = document.getElementById("generateButton");
 const resetButton = document.getElementById("resetButton");
@@ -104,6 +84,30 @@ function resetTeam() {
     img.alt = "placeholder";
   });
 }
+
+const teamNameData = database.ref("teamName");
+
+teamNameData.on("value", (snapshot) => {
+  const data = snapshot.val();
+  if (data) {
+    teamName.textContent = data;
+    teamName.style.display = "block";
+  } else {
+    teamName.textContent = "";
+  }
+});
+
+submitName.addEventListener("click", () => {
+  const newName = teamName.textContent.trim();
+  if (newName !== "") {
+    teamNameData.set(newName);
+  }
+});
+
+deleteName.addEventListener("click", () => {
+  teamNameData.remove();
+  teamNameData.style.display = "none";
+});
 
 button.addEventListener("click", generateTeam);
 resetButton.addEventListener("click", resetTeam);
