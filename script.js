@@ -1,11 +1,11 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyAi0NciW46RWGGmfnuOu9ze03gk2VD2fvQ",
-  authDomain: "pokemon-team-generator-54dc3.firebaseapp.com",
-  databaseURL: "https://pokemon-team-generator-54dc3-default-rtdb.firebaseio.com",
-  projectId: "pokemon-team-generator-54dc3",
-  storageBucket: "pokemon-team-generator-54dc3.firebasestorage.app",
-  messagingSenderId: "955331064380",
-  appId: "1:955331064380:web:709d8cbcfbb8739286c939"
+  apiKey: "AIzaSyASORaCFX8hB5TDfzd9c58LP7XMcVNAHMk",
+  authDomain: "pokemon-4477e.firebaseapp.com",
+  databaseURL: "https://pokemon-4477e-default-rtdb.firebaseio.com",
+  projectId: "pokemon-4477e",
+  storageBucket: "pokemon-4477e.firebasestorage.app",
+  messagingSenderId: "1000863468457",
+  appId: "1:1000863468457:web:44e824241614483a7d52b8"
 };
 
 firebase.initializeApp(firebaseConfig);
