@@ -83,6 +83,8 @@ function resetTeam() {
     img.src = placeholderImage;
     img.alt = "placeholder";
   });
+  pokemonBox.innerHTML = "";
+  teamName.textContent = "Your Team Name";
 }
 
 const teamNameData = database.ref("teamName");
